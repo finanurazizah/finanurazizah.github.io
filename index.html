@@ -1,40 +1,44 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <style>
-      body {
-        background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-      }
-      .title {
-        text-align: center;
-        font-size: 48px;
-        font-weight: bold;
-        color: white;
-        text-shadow: 2px 2px 20px #000000;
-      }
-      .subtitle {
-        text-align: center;
-        font-size: 24px;
-        color: white;
-        text-shadow: 2px 2px 4px #000000;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="title">Github Pages Landing</div>
-      <div class="subtitle">Thank you for visiting</div>
-    </div>
-  </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50" style="background: url('https://source.unsplash.com/1920x1080/?minimalist,abstract') no-repeat center center/cover;">
+    <header class="bg-white bg-opacity-80 backdrop-blur-md text-gray-900 py-6 text-center text-3xl font-extrabold shadow-lg">
+        Selamat Datang di Landing Page Kami
+    </header>
+    
+    <section class="flex flex-col items-center justify-center text-center py-16 px-6">
+        <h1 class="text-5xl font-extrabold text-white mb-6 drop-shadow-lg">Solusi Terbaik untuk Kebutuhan Anda</h1>
+        <p class="text-lg text-gray-200 max-w-3xl drop-shadow-lg">Kami menyediakan layanan terbaik untuk membantu bisnis Anda berkembang dengan teknologi terkini dan inovatif.</p>
+        <button class="mt-6 px-8 py-4 bg-white text-gray-900 rounded-full shadow-xl hover:scale-105 transform transition duration-300">
+            Pelajari Lebih Lanjut
+        </button>
+    </section>
+    
+    <section class="bg-white bg-opacity-80 backdrop-blur-md py-16 px-6 rounded-lg shadow-lg max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Kenapa Memilih Kami?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-600">Profesional</h3>
+                <p class="text-gray-600 mt-2">Kami memiliki tim ahli yang siap membantu Anda.</p>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-600">Inovatif</h3>
+                <p class="text-gray-600 mt-2">Selalu mengikuti perkembangan teknologi terbaru.</p>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-600">Terpercaya</h3>
+                <p class="text-gray-600 mt-2">Dipercaya oleh banyak pelanggan di berbagai industri.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-white text-center py-6 mt-10 bg-opacity-80 backdrop-blur-md">
+        &copy; 2025 Perusahaan Anda. Semua Hak Dilindungi.
+    </footer>
+</body>
 </html>
